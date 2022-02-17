@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="动态生化生物氧化呼吸链 得电子被还原，失电子被氧化 将质子从基质泵入膜间隙，传递电子合成ATP 合成运输一个ATP需要：3+1个$H^+$ $NADH$产生2.5个ATP，$FADH_2$产生1.5个ATP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="生物化学">
+<meta property="og:url" content="http://example.com/2022/02/17/%E7%94%9F%E5%8C%96%E7%AC%94%E8%AE%B0%E5%9B%BE%E5%BA%8A/index.html">
+<meta property="og:site_name" content="MyBlog">
+<meta property="og:description" content="动态生化生物氧化呼吸链 得电子被还原，失电子被氧化 将质子从基质泵入膜间隙，传递电子合成ATP 合成运输一个ATP需要：3+1个$H^+$ $NADH$产生2.5个ATP，$FADH_2$产生1.5个ATP">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2021/12/19/4lIyb7ofqcCjOGr.jpg">
+<meta property="og:image" content="https://s2.loli.net/2021/12/27/Li6WZPvSYGVRn53.jpg">
+<meta property="og:image" content="https://s2.loli.net/2021/12/27/I7pfXtFm9Nk4DnH.jpg">
+<meta property="og:image" content="https://s2.loli.net/2021/12/19/twcNBD19PIzUYJR.jpg">
+<meta property="og:image" content="https://s2.loli.net/2021/12/19/9S1Bs6cKfGXYuvQ.jpg">
+<meta property="og:image" content="https://s2.loli.net/2021/12/19/W59t2YqMm7DwGKp.jpg">
+<meta property="og:image" content="https://s2.loli.net/2021/12/19/8G6OLdESWXgV1Bj.jpg">
+<meta property="og:image" content="https://s2.loli.net/2021/12/19/bTXokqzyIgKZx3e.jpg">
+<meta property="article:published_time" content="2022-02-17T02:22:08.000Z">
+<meta property="article:modified_time" content="2022-02-17T09:55:24.421Z">
+<meta property="article:author" content="Jonathan Yang">
+<meta property="article:tag" content="生化">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2021/12/19/4lIyb7ofqcCjOGr.jpg">
+
+<link rel="canonical" href="http://example.com/2022/02/17/%E7%94%9F%E5%8C%96%E7%AC%94%E8%AE%B0%E5%9B%BE%E5%BA%8A/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>生物化学 | MyBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">MyBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/17/%E7%94%9F%E5%8C%96%E7%AC%94%E8%AE%B0%E5%9B%BE%E5%BA%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https:s2.loli.net/2022/02/17/rUcFo19TmOpu3MA.jpg">
+      <meta itemprop="name" content="Jonathan Yang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MyBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          生物化学
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-02-17 10:22:08 / 修改时间：17:55:24" itemprop="dateCreated datePublished" datetime="2022-02-17T10:22:08+08:00">2022-02-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="动态生化"><a href="#动态生化" class="headerlink" title="动态生化"></a>动态生化</h1><h2 id="生物氧化"><a href="#生物氧化" class="headerlink" title="生物氧化"></a>生物氧化</h2><h3 id="呼吸链"><a href="#呼吸链" class="headerlink" title="呼吸链"></a><mark>呼吸链</h3><ul>
+<li>得电子被还原，失电子被氧化</li>
+<li>将质子从基质泵入膜间隙，传递电子合成ATP</li>
+<li><strong>合成运输一个ATP需要：3+1个$H^+$</strong></li>
+<li>$NADH$产生2.5个ATP，$FADH_2$产生1.5个ATP<span id="more"></span>
+</li>
+</ul>
+<hr>
+<h4 id="NADH呼吸链"><a href="#NADH呼吸链" class="headerlink" title="NADH呼吸链"></a>NADH呼吸链</h4><ul>
+<li><strong>泵送4+4+2个质子，传递2+2+2个电子</strong></li>
+<li>Complex1（NADH-CoQ氧化还原酶）<ul>
+<li><em>电子传递</em><script type="math/tex">NADH\xrightarrow[FMN,Fe-S]{2e^-}CoQ(得电子后变为Co QH_2),4H^+\uparrow</script></li>
+</ul>
+</li>
+<li>Complex3（CoQ-Cyt c氧化还原酶）<ul>
+<li><em>电子传递</em><script type="math/tex">CoQH_2\xrightarrow[Fe-S,Cyt b,Cyt c]{2e^-}Cytc,4H^+\uparrow</script></li>
+</ul>
+</li>
+<li>Complex4（Cyt c氧化酶）<ul>
+<li><em>电子传递</em><script type="math/tex">Cytc\xrightarrow{2e^-}\frac{1}{2}O_2,2H^+\uparrow</script> </li>
+</ul>
+</li>
+</ul>
+<h4 id="FADH-2-呼吸链"><a href="#FADH-2-呼吸链" class="headerlink" title="$FADH_2$呼吸链"></a>$FADH_2$呼吸链</h4><ul>
+<li><strong>泵送4+2个质子，传递2+2个电子</strong></li>
+<li>Complex2（琥珀酸-CoQ氧化还原酶）只接受琥珀酸的电子<ul>
+<li><em>电子传递</em></li>
+<li><strong>不泵送质子</strong><script type="math/tex">琥珀酸\xrightarrow[FAD,Fe-S]{2e^-}CoQ,自身变为富马酸</script></li>
+</ul>
+</li>
+<li>Complex3（CoQ-Cyt c氧化还原酶）<ul>
+<li><em>电子传递</em><script type="math/tex">CoQH_2\xrightarrow[Fe-S,Cyt b,Cyt c]{2e^-}Cytc,4H^+\uparrow</script></li>
+</ul>
+</li>
+<li>Complex4（Cyt c氧化酶）<ul>
+<li><em>电子传递</em><script type="math/tex">Cytc\xrightarrow{2e^-}\frac{1}{2}O_2,2H^+\uparrow</script> </li>
+</ul>
+</li>
+</ul>
+<h2 id="糖酵解"><a href="#糖酵解" class="headerlink" title="糖酵解"></a><mark>糖酵解</h2><ul>
+<li>发生于活细胞的细胞质基质</li>
+<li>分<strong>十步反应</strong>，<strong>两个阶段</strong></li>
+<li>第一阶段：投资/引发阶段<ul>
+<li><em>葡萄糖（Glu，6C）$\xrightarrow{2ATP}2\times$3-磷酸甘油醛（GAP,3C）+ 0ATP+ 0NADH</em></li>
+</ul>
+</li>
+<li>第二阶段：能量收获阶段<ul>
+<li><em>2GAP$\rightarrow$ 2丙酮酸（PYR，3C）+ 4ATP + 2NADH</em></li>
+</ul>
+</li>
+<li>丙酮酸去向：有氧下<ul>
+<li><em>$丙酮酸+CoA+NAD^+\xrightarrow{丙酮酸脱氢酶复合体}乙酰CoA+CO_2+NADH+H^+$</em></li>
+</ul>
+</li>
+<li>有氧条件下总共得到4+5(2NADH)-2个ATP</li>
+</ul>
+<hr>
+<h3 id="反应历程"><a href="#反应历程" class="headerlink" title="反应历程"></a>反应历程</h3><blockquote>
+<hr>
+<script type="math/tex; mode=display">
+\begin{aligned}
+葡&萄糖\\
+ATP &\downarrow\color{lime}\underline{己糖激酶}\\
+葡糖-&6-磷酸\\
+&\Updownarrow 磷酸葡糖异构酶\\
+F-&6-BP\\
+ATP &\downarrow \color{lime}\underline{PFK-1,限速酶}\\
+F-1&,6-2BP\\
+&\Updownarrow 醛缩酶\\
+3-磷酸甘油醛&\Leftrightarrow磷酸二羟丙酮\\
+产生NADH&\Updownarrow \color{lime}\underline{3-磷酸甘油醛脱氢酶}\\
+1,3&-二磷酸甘油酸\\
+产生ATP&\Updownarrow\color{lime} \underline{磷酸甘油酸激酶}\\
+3-&磷酸甘油酸\\
+&\Updownarrow 磷酸甘油酸变位酶\\
+2-&磷酸甘油酸\\
+&\Updownarrow 烯醇化酶\\
+P&EP\\
+产生ATP&\downarrow \color{lime}\underline{丙酮酸激酶}\\ 
+丙&酮酸
+\end{aligned}</script></blockquote>
+<hr>
+<h4 id="反应1-葡萄糖磷酸化"><a href="#反应1-葡萄糖磷酸化" class="headerlink" title="反应1:葡萄糖磷酸化"></a>反应1:葡萄糖磷酸化</h4><ol>
+<li>己糖激酶或葡萄糖激酶催化，生成6-磷酸葡糖</li>
+<li>消耗1个ATP引发反应，<strong>第一步不可逆</strong></li>
+<li><em>该反应意义</em>：<ul>
+<li>活化葡萄糖，便于反应</li>
+<li>磷酸化后带上负电荷，难以离开细胞</li>
+<li>有利于外面葡萄糖进入细胞，降低血糖</li>
+</ul>
+</li>
+</ol>
+<h4 id="反应3-磷酸果糖的磷酸化"><a href="#反应3-磷酸果糖的磷酸化" class="headerlink" title="反应3:磷酸果糖的磷酸化"></a>反应3:磷酸果糖的磷酸化</h4><ol>
+<li><strong>第二步不可逆反应</strong>，<em>糖酵解限速步骤</em></li>
+<li>由磷酸果糖激酶-1（PFK-1）催化，生成<strong>果糖-1,6-二磷酸(F-1,6-BP)</strong></li>
+<li>第二次引发反应，消耗1个ATP</li>
+<li><em>自由能大幅降低，受高度调控</em></li>
+</ol>
+<h4 id="反应6-3-磷酸甘油醛脱氢"><a href="#反应6-3-磷酸甘油醛脱氢" class="headerlink" title="反应6:3-磷酸甘油醛脱氢"></a>反应6:3-磷酸甘油醛脱氢</h4><ol>
+<li>3-磷酸甘油醛被氧化成1，3-二磷酸甘油酸</li>
+<li><em>糖酵解唯一的氧化还原反应</em></li>
+<li>由3-磷酸甘油醛脱氢酶催化</li>
+<li>产生1，3-BPG和NADH<ul>
+<li>在脑细胞中NADH通过线粒体内膜上的3-甘油磷酸穿梭系统产生<strong>1.5ATP</strong></li>
+<li>在肝细胞中通过苹果酸-天冬氨酸穿梭系统产生<strong>2.5ATP</strong></li>
+</ul>
+</li>
+</ol>
+<h4 id="反应7-第一步底物水平磷酸化"><a href="#反应7-第一步底物水平磷酸化" class="headerlink" title="反应7:第一步底物水平磷酸化"></a>反应7:第一步底物水平磷酸化</h4><ol>
+<li>由高能磷酸化合物合成ATP，产生1个ATP</li>
+<li>磷酸甘油激酶催化</li>
+<li>红细胞内存在生成2，3-BPG的支路</li>
+</ol>
+<h4 id="反应10-第二步底物水平磷酸化"><a href="#反应10-第二步底物水平磷酸化" class="headerlink" title="反应10:第二步底物水平磷酸化"></a>反应10:第二步底物水平磷酸化</h4><ol>
+<li><em>PEP</em>转化成丙酮酸，产生1个ATP</li>
+<li><strong>第三步不可逆反应</strong></li>
+<li>由<em>丙酮酸激酶</em>催化</li>
+<li>$\Delta G$为大的负值，<em>受到调控</em></li>
+</ol>
+<h3 id="糖酵解的调控"><a href="#糖酵解的调控" class="headerlink" title="糖酵解的调控"></a>糖酵解的调控</h3><blockquote>
+<p><em>当ATP水平较高，糖酵解活性降低</em></p>
+<ol>
+<li>己糖激酶受到<strong>过量6-磷酸葡糖</strong>的抑制</li>
+<li>磷酸果糖激酶-1 (PFK-1)受到<strong>ATP和柠檬酸</strong>抑制</li>
+<li>丙酮酸激酶受到<strong>ATP</strong>抑制</li>
+</ol>
+<p><em>当ATP不足时，糖酵解被激活</em></p>
+<ol>
+<li><strong>AMP，ADP</strong>解除ATP对<strong>PFK-1</strong>的抑制</li>
+<li><strong>F-2,6-BP(果糖-2,6-二磷酸)</strong> 解除ATP对 <strong>PFK-1</strong> 的抑制</li>
+<li><strong>F-1,6-BP</strong>激活丙酮酸激酶</li>
+</ol>
+</blockquote>
+<h2 id="三羧酸循环-TCA"><a href="#三羧酸循环-TCA" class="headerlink" title="三羧酸循环(TCA)"></a><mark>三羧酸循环(TCA)</h2><ul>
+<li><em>草酰乙酸</em>(4C)<em> 与 </em>乙酰辅酶A<em> (2C，丙酮酸氧化脱羧的产物)缩合生成具有</em>三个羧基的柠檬酸<em>开始，经过一系列脱氢和脱羧反应后又以</em>草酰乙酸*的再生成结束</li>
+<li>在循环过程中，乙酰CoA被氧化成 $H_2O $ 和 $CO_2$， 并释放出大量能量。</li>
+<li>由于循环中首先生成含有<em>三个羧基的柠檬酸</em>，并且循环中 有<em>三个三元羧酸</em>(柠檬酸、异柠檬酸和草酰琥珀酸)，故被称为三羧酸循环或柠檬酸循环，简称TCA循环。</li>
+</ul>
+<hr>
+<h3 id="乙酰CoA的生成"><a href="#乙酰CoA的生成" class="headerlink" title="乙酰CoA的生成"></a>乙酰CoA的生成</h3><ul>
+<li><em>丙酮酸</em>的氧化脱羧</li>
+<li><em>氨基酸</em>的氧化分解</li>
+<li><em>脂肪酸</em>的$\beta$氧化</li>
+</ul>
+<h3 id="反应历程-1"><a href="#反应历程-1" class="headerlink" title="反应历程"></a>反应历程</h3><h4 id="反应1-柠檬酸的合成"><a href="#反应1-柠檬酸的合成" class="headerlink" title="反应1:柠檬酸的合成"></a>反应1:柠檬酸的合成</h4><ol>
+<li><em>$乙酰-CoA \xrightarrow{柠檬酸合酶} 柠檬酸$</em></li>
+<li>单向不可逆，可调控的限速步骤</li>
+</ol>
+<h4 id="反应2-柠檬酸的异构化"><a href="#反应2-柠檬酸的异构化" class="headerlink" title="反应2:柠檬酸的异构化"></a>反应2:柠檬酸的异构化</h4><ol>
+<li><em>$柠檬酸 \xrightarrow{顺乌头酸酶} 异柠檬酸$</em></li>
+<li>柠檬酸不是好的氧化底物，而异柠檬酸易氧化</li>
+</ol>
+<h4 id="反应3-异柠檬酸的脱氢"><a href="#反应3-异柠檬酸的脱氢" class="headerlink" title="反应3:异柠檬酸的脱氢"></a>反应3:异柠檬酸的脱氢</h4><ol>
+<li><em>$异柠檬酸 \xrightarrow{异柠檬酸脱氢酶} \alpha -酮戊二酸+CO_2$</em></li>
+<li>先脱氢，再$\beta-脱羧$</li>
+<li>辅酶1($NAD^+$)和辅酶2($NADP^+$)作为氢的受体，产生一个NAD(P)H</li>
+<li>不可逆，TCA第一步氧化反应，三羧酸变为二羧酸</li>
+</ol>
+<h4 id="反应4-alpha-酮戊二酸-的氧化脱羧"><a href="#反应4-alpha-酮戊二酸-的氧化脱羧" class="headerlink" title="反应4:$\alpha-酮戊二酸$的氧化脱羧"></a>反应4:$\alpha-酮戊二酸$的氧化脱羧</h4><ol>
+<li><em>$\alpha-酮戊二酸 \xrightarrow{\alpha-酮戊二酸脱氢酶系} 琥珀酰-CoA+CO_2$</em></li>
+<li>第二次氧化脱羧，不可逆</li>
+<li>产生一个NADH</li>
+</ol>
+<h4 id="反应5-底物水平的磷酸化"><a href="#反应5-底物水平的磷酸化" class="headerlink" title="反应5:底物水平的磷酸化"></a>反应5:底物水平的磷酸化</h4><ol>
+<li><em>$琥珀酰-CoA \xrightarrow{琥珀酰-CoA合成酶} 琥珀酸$</em></li>
+<li>TCA唯一一部底物水平磷酸化，生成一个ATP或GTP</li>
+</ol>
+<h4 id="反应6-琥珀酸的脱氢"><a href="#反应6-琥珀酸的脱氢" class="headerlink" title="反应6:琥珀酸的脱氢"></a>反应6:琥珀酸的脱氢</h4><ol>
+<li><em>$琥珀酸 \xrightarrow{琥珀酸脱氢酶} 延胡索酸$</em></li>
+<li>第三次氧化还原反应</li>
+<li>琥珀酸脱氢酶和Complex2上的酶相同</li>
+<li>产生一个$FADH_2$</li>
+</ol>
+<h4 id="反应7-苹果酸的形成"><a href="#反应7-苹果酸的形成" class="headerlink" title="反应7:苹果酸的形成"></a>反应7:苹果酸的形成</h4><ol>
+<li><em>$延胡索酸 \xrightarrow[H_2O]{延胡索酸酶} 苹果酸$</em></li>
+<li>双键被水反式加成</li>
+</ol>
+<h4 id="反应8-草酰乙酸的再生"><a href="#反应8-草酰乙酸的再生" class="headerlink" title="反应8:草酰乙酸的再生"></a>反应8:草酰乙酸的再生</h4><ol>
+<li><em>$苹果酸 \xrightarrow{苹果酸脱氢酶} 草酰乙酸$</em></li>
+<li>第四次氧化还原反应</li>
+<li>产生一个NADH</li>
+<li>该反应自由能很大，但是体内草酰乙酸和NADH很快被消耗，反应得以进行</li>
+</ol>
+<h3 id="TCA的调控"><a href="#TCA的调控" class="headerlink" title="TCA的调控"></a>TCA的调控</h3><blockquote>
+<p><strong>为了适应细胞对能量的需求，细胞内的TCA循环是受到严格控制的。</strong></p>
+<ul>
+<li>对 TCA循环本身的调控集中在<em>柠檬酸合酶、异柠檬酸脱氢酶和α-酮戊二酸脱氢酶</em>，最重要调控位点的是<strong>异柠檬酸脱氢酶</strong>，其次是<strong>α- 酮戊二酸脱氢</strong>，至于柠檬酸合酶，对它的调控多见于原核生物。 </li>
+<li>三个调控酶催化的都是不可逆反应</li>
+</ul>
+<p><strong>三个调控位点</strong></p>
+<ol>
+<li><em>异柠檬酸脱氢酶</em>：<ul>
+<li>受<strong>ATP和NADH</strong>变构抑制</li>
+<li>受<strong>ADP</strong>变构促进，$Ca^+$激活</li>
+</ul>
+</li>
+<li><em>α- 酮戊二酸脱氢酶</em><ul>
+<li>受产物<strong>琥珀酰-CoA，NADH</strong>抑制</li>
+<li>受$Ca^+$激活</li>
+</ul>
+</li>
+<li><em>柠檬酸合成酶(限速酶)</em>，限速酶：整条代谢途径中反应最慢的酶<ul>
+<li>高浓度<strong>ATP和NADH</strong>抑制柠檬酸合成</li>
+<li>高浓度<strong>琥珀酰-CoA</strong>抑制酶活性</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<h3 id="TCA循环总结"><a href="#TCA循环总结" class="headerlink" title="TCA循环总结"></a>TCA循环总结</h3><ul>
+<li><strong>$乙酰-CoA\xrightarrow{TCA}2CO_2+1ATP+3NADH+1FADH_2$</strong></li>
+<li>1个乙酰-CoA产生10个ATP</li>
+<li>2个$CO_2$的两个C来自上一轮</li>
+<li><em>宁异勿同，虎虎言平，一同平虎。两虎一能</em><ul>
+<li>宁异勿同，虎虎言平：柠异戊酮，琥琥延苹</li>
+<li>一同平虎：异酮苹(NADH)琥($FADH_2$)</li>
+<li>两虎一能：琥珀酰-CoA和琥珀酸之间生成ATP或GTP</li>
+</ul>
+</li>
+<li>丙酮酸的两个C变成二氧化碳，循环消耗2分子水</li>
+<li>循环不需要氧，但离开氧无法进行</li>
+</ul>
+<h2 id="磷酸戊糖途径"><a href="#磷酸戊糖途径" class="headerlink" title="磷酸戊糖途径"></a><mark>磷酸戊糖途径</h2><ul>
+<li>糖酵解关键酶抑制后，Glu利用磷酸戊糖途径进行氧化代谢</li>
+<li>产生NADP H(不加入呼吸链)，提供还原氢<h3 id="反应历程-2"><a href="#反应历程-2" class="headerlink" title="反应历程"></a>反应历程</h3><blockquote>
+<p><strong>葡萄糖的氧化脱羧阶段</strong></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&6-P-Glu \xrightarrow[6-P-Glu脱氢酶]{产生\color{yellow}NADPH}6-P-葡萄糖酸内酯 \xrightarrow[6-P-葡萄糖酸内酯酶]{H_2O}6-P葡萄糖酸 \\
+& 6-P葡萄糖酸\xrightarrow[6-P-葡萄糖酸脱氢酶]{产生\color{yellow}NADPH}5-P核酮糖\\
+\end{aligned}</script></blockquote>
+</li>
+</ul>
+<blockquote>
+<p><strong>非氧化分子重排阶段</strong></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&6 \times 5-P核酮糖 \rightarrow 4 \times 6-P果糖+2 \times 3-P甘油醛\\
+&2 \times 3-P甘油醛 \rightarrow 6-P果糖\\
+&最终生成 \quad 5 \times 6-P果糖\\
+\end{aligned}</script><p><strong>总反应</strong></p>
+</blockquote>
+<ul>
+<li>1个6-P-葡萄糖经6次循环被彻底氧化为6个$CO_2$</li>
+<li>每次循环产生2个NADPH</li>
+</ul>
+<hr>
+<h2 id="糖异生"><a href="#糖异生" class="headerlink" title="糖异生"></a><mark>糖异生</h2><ul>
+<li>由乳酸或其他非糖物质净合成葡萄糖的过程，动植物微生物都能进行。</li>
+<li>保留糖酵解全部可逆反应(2,4~9)，4步新反应</li>
+<li>除丙酮酸变为PEP需要先经历草酰乙酸外，反应都相同</li>
+<li>三步不可逆反应的酶发生变化</li>
+<li><em>2分子丙酮酸合成葡萄糖，消耗$2\times3ATP$</em></li>
+<li>动物体内<ul>
+<li>发生在<em>肝脏和肾脏</em>，是动物合成Glu的唯一手段。</li>
+<li><em>底物</em>：<ul>
+<li>丙酮酸、乳酸、甘油、生糖氨基酸(Lys,Leu不行)、TCA循环中间物</li>
+<li>奇数脂肪酸，<strong>偶数脂肪酸不可以，只能产生乙酰-CoA</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="反应历程-3"><a href="#反应历程-3" class="headerlink" title="反应历程"></a>反应历程</h3><script type="math/tex; mode=display">
+\begin{aligned}
+葡&萄糖\\
+Pi&  \uparrow \color{yellow}{\underline{葡糖-6-磷酸酶}}\\
+葡糖-&6-磷酸\\
+&\Updownarrow 磷酸葡糖异构酶\\
+F-&6-BP\\
+Pi &\uparrow  \color{yellow}{\underline{F-1,6-2BP酶}}\\
+F-1&,6-2BP\\
+&\Updownarrow 醛缩酶\\
+3-磷酸甘油醛&\Leftrightarrow磷酸二羟丙酮\\
+消耗NADH&\Updownarrow \underline{3-磷酸甘油醛脱氢酶}\\
+1,3&-二磷酸甘油酸\\
+消耗ATP&\Updownarrow \underline{磷酸甘油酸激酶}\\
+3-&磷酸甘油酸\\
+&\Updownarrow 磷酸甘油酸变位酶\\
+2-&磷酸甘油酸\\
+&\Updownarrow 烯醇化酶\\
+P&EP\\
+ \color{yellow}{消耗GTP/ATP}&\uparrow  \color{yellow}{\underline{PEP羧激酶}}\\
+ 草&酰乙酸\\
+ \color{yellow}{生物素，1ATP}&\uparrow  \color{yellow}{\underline{丙酮酸羧化酶}}\\
+丙&酮酸
+\end{aligned}</script><h4 id="反应1-丙酮酸的羧化"><a href="#反应1-丙酮酸的羧化" class="headerlink" title="反应1:丙酮酸的羧化"></a>反应1:丙酮酸的羧化</h4><ol>
+<li>由丙酮酸羧化酶催化，需要生物素</li>
+<li>丙酮酸羧化为草酰乙酸</li>
+<li>在<em>线粒体基质</em>发生</li>
+<li>消耗1个ATP驱动羧化反应</li>
+</ol>
+<h4 id="反应2-PEP的形成"><a href="#反应2-PEP的形成" class="headerlink" title="反应2:PEP的形成"></a>反应2:PEP的形成</h4><ol>
+<li>由PEP羧激酶催化</li>
+<li><strong>糖酵解最后一步$PEP\rightarrow 丙酮酸$</strong></li>
+<li>需要消耗<em>GTP</em></li>
+</ol>
+<h4 id="反应3-1-6-二磷酸果糖的水解"><a href="#反应3-1-6-二磷酸果糖的水解" class="headerlink" title="反应3:1,6-二磷酸果糖的水解"></a>反应3:1,6-二磷酸果糖的水解</h4><h4 id="反应4-6-磷酸葡糖的水解"><a href="#反应4-6-磷酸葡糖的水解" class="headerlink" title="反应4:6-磷酸葡糖的水解"></a>反应4:6-磷酸葡糖的水解</h4><ol>
+<li>6-磷酸葡糖磷酸酶催化6-磷酸葡糖水解成葡萄糖</li>
+<li>发生于肝、肾内质网，进入内质网才能水解</li>
+<li><em>肌肉和脑细胞</em>没有这种酶，不能糖异生</li>
+</ol>
+<h3 id="其他物质进入糖异生途径"><a href="#其他物质进入糖异生途径" class="headerlink" title="其他物质进入糖异生途径"></a>其他物质进入糖异生途径</h3><p><img src="https://s2.loli.net/2021/12/19/4lIyb7ofqcCjOGr.jpg" alt=""></p>
+<h3 id="Cori循环和Ala循环"><a href="#Cori循环和Ala循环" class="headerlink" title="Cori循环和Ala循环"></a>Cori循环和Ala循环</h3><blockquote>
+<p><strong>Cori循环即乳酸循环，关键酶是LDH</strong><br>&lt;/br&gt;</p>
+<p><strong>Ala循环即丙氨酸循环，关键酶是GPT</strong> </p>
+<ul>
+<li>在饥饿，禁食时发生</li>
+</ul>
+</blockquote>
+<h3 id="糖异生的生理功能"><a href="#糖异生的生理功能" class="headerlink" title="糖异生的生理功能"></a>糖异生的生理功能</h3><ol>
+<li>饥饿或血糖低时，可以补充血糖，<em>维持血糖稳定</em></li>
+<li>和糖酵解同时发生，”无效循环”，可以放大代谢信号，产生大量的热</li>
+</ol>
+<h3 id="糖异生调节"><a href="#糖异生调节" class="headerlink" title="糖异生调节"></a>糖异生调节</h3><ol>
+<li>调节酶：丙酮酸羧化酶、PEP羧激酶、1,6-二磷酸 果糖磷酸酶和6-磷酸葡糖磷酸酶。其中，<strong>1,6-二磷酸果糖磷酸酶</strong>是最重要的调节酶</li>
+<li>主要别构调节，还有基因表达调控</li>
+</ol>
+<h2 id="糖原代谢"><a href="#糖原代谢" class="headerlink" title="糖原代谢"></a><mark>糖原代谢</h2><blockquote>
+<p><em>糖原是葡萄糖的多聚体，主要以α-1,4糖苷键连接，分支点以α-1,6糖苷键连接</em></p>
+<h3 id="糖原合成"><a href="#糖原合成" class="headerlink" title="糖原合成"></a>糖原合成</h3><ul>
+<li>一分子葡萄糖变成一个糖基消耗<em>2个ATP</em><ul>
+<li>分别用于生成6-磷酸葡糖，焦磷酸高能磷酸键断裂<br>$6-磷酸葡糖 \xrightarrow{磷酸葡糖变位酶}1-磷酸葡糖$<br>$1-磷酸葡糖 \rightleftharpoons UDPG + 焦磷酸(焦磷酸被快速代谢为磷酸)$<br><strong>糖原合酶催化UDPG合成糖原，不能形成分支。<br>超过11个糖基后，分支酶催化产生分支</strong><h3 id="糖原分解"><a href="#糖原分解" class="headerlink" title="糖原分解"></a>糖原分解</h3></li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>在<em>糖原磷酸化酶</em>催化下，糖基α-1,4糖苷键断裂，生成1-磷酸葡糖，不能分解支链</li>
+<li>在<em>脱支酶</em>(葡聚糖转移酶，α-1,6葡糖苷酶)催化下，支链断裂</li>
+<li>在<em>磷酸葡糖变位酶</em>催化下1-磷酸葡糖变为6-磷酸葡糖<br><img src="https://s2.loli.net/2021/12/27/Li6WZPvSYGVRn53.jpg" alt=""></li>
+</ol>
+</blockquote>
+<h2 id="糖代谢"><a href="#糖代谢" class="headerlink" title="糖代谢"></a>糖代谢</h2><p><img src="https://s2.loli.net/2021/12/27/I7pfXtFm9Nk4DnH.jpg" alt=""></p>
+<h2 id="脂肪酸代谢"><a href="#脂肪酸代谢" class="headerlink" title="脂肪酸代谢"></a><mark>脂肪酸代谢</h2><ul>
+<li>脂肪水解成甘油和脂肪酸<ul>
+<li>$\color{yellow}甘油\xrightarrow[甘油激酶，消耗1ATP]{活化}磷酸甘油\rightarrow 磷酸二羟丙酮$</li>
+</ul>
+</li>
+<li><strong>α-氧化,β-氧化,ω-氧化</strong><h3 id="β-氧化"><a href="#β-氧化" class="headerlink" title="β-氧化"></a>β-氧化</h3></li>
+<li><strong>四步反应重复循环</strong>，一轮反应除去脂肪酸的2C，形成<em>乙酰-CoA</em>进入TCA</li>
+<li>长链脂肪酸需要转化为脂酰肉碱，才能进入线粒体基质，在基质，脂酰-CoA重新形成</li>
+<li>一轮循环，产生 <strong>$1FADH_2和1NADH$</strong></li>
+<li><em>$2n脂肪酸 \rightarrow n乙酰辅酶A +(n-1)(NADH+FADH_2)$</em><h4 id="反应历程-4"><a href="#反应历程-4" class="headerlink" title="反应历程"></a>反应历程</h4><blockquote>
+<hr>
+<script type="math/tex; mode=display">
+\begin{aligned}
+脂酰&-CoA(2nC)\\
+{FAD\rightarrow FADH_2}&\downarrow脂酰-CoA脱氢酶\\
+反烯酰&-CoA\\
+H_2O&\downarrow烯酰-CoA水和酶\\
+L-β-&羟酰-CoA \\ 
+NAD^+\rightarrow NADH&\downarrow羟酰-CoA脱氢酶\\
+β-酮&酰-CoA\\
+CoASH &\downarrow硫解酶 \\
+脂酰-CoA&(2n-2C)+乙酰-CoA\\
+\end{aligned}</script></blockquote>
+</li>
+</ul>
+<hr>
+<p><img src="https://s2.loli.net/2021/12/19/twcNBD19PIzUYJR.jpg" alt=""></p>
+<h4 id="β-氧化的功能"><a href="#β-氧化的功能" class="headerlink" title="β-氧化的功能"></a>β-氧化的功能</h4><ol>
+<li>产生大量<em>ATP</em>，效率高于Glu</li>
+<li>产生大量$H_2O$对干燥环境生活生物很重要</li>
+</ol>
+<h4 id="β-氧化的挑战"><a href="#β-氧化的挑战" class="headerlink" title="β-氧化的挑战"></a>β-氧化的挑战</h4><ol>
+<li>不饱和脂肪酸<ul>
+<li>用特殊的异构酶改变双键位置</li>
+<li>单不饱和脂肪酸少产生一个$FADH_2$</li>
+<li>双不饱和少产生一个$FADH_2$，消耗一个NADPH</li>
+</ul>
+</li>
+<li>奇数脂肪酸<ul>
+<li>最终会氧化为丙酰-CoA，停止循环</li>
+<li>丙酰-CoA会转变为<em>琥珀酰-CoA</em>进入TCA</li>
+</ul>
+</li>
+<li>超长链脂肪酸<ul>
+<li>>18C的脂酰-CoA难以进入线粒体</li>
+<li>可以进入<em>过氧化物酶体</em>或<em>乙醛酸循环体</em>进行β-氧化，不需要肉碱运输</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="α-氧化"><a href="#α-氧化" class="headerlink" title="α-氧化"></a>α-氧化</h3><ul>
+<li>直接在游离的脂肪酸上进行氧化，不需要激活，<em>不产生ATP</em></li>
+<li>发生于内质网、线粒体、过氧化物酶体</li>
+</ul>
+<hr>
+<h3 id="ω-氧化"><a href="#ω-氧化" class="headerlink" title="ω-氧化"></a>ω-氧化</h3><ul>
+<li>脂肪酸的ω-碳原子先被氧化成羟基，再进一步氧化成ω-羧基，形成α,ω-二羧脂肪酸，然后可以在两端进行β-氧化而分解。</li>
+</ul>
+<h3 id="脂肪酸的合成"><a href="#脂肪酸的合成" class="headerlink" title="脂肪酸的合成"></a>脂肪酸的合成</h3><ol>
+<li>除了植物在质体中进行，其余生物都在细胞质基质中进行合成</li>
+<li>从头合成需要<strong>乙酰-CoA</strong>作为引物</li>
+<li>丙二酸单酰-CoA的脱羧反应和<strong>NADPH</strong>作为驱动碳链延伸的动力</li>
+<li><strong>软脂酸</strong>通常是反应的终产物</li>
+<li>软脂酸通过修饰延伸形成其他脂肪酸</li>
+</ol>
+<hr>
+<h2 id="氨基酸代谢"><a href="#氨基酸代谢" class="headerlink" title="氨基酸代谢"></a><mark>氨基酸代谢</h2><ol>
+<li>蛋白质酶促降解</li>
+<li>氨基酸分解<ul>
+<li>氨基代谢</li>
+<li>氨的进一步代谢转变</li>
+<li>碳骨架代谢</li>
+</ul>
+</li>
+<li>氨基酸及其衍生物合成</li>
+</ol>
+<h3 id="蛋白质酶促降解"><a href="#蛋白质酶促降解" class="headerlink" title="蛋白质酶促降解"></a>蛋白质酶促降解</h3><h4 id="不依赖ATP降解"><a href="#不依赖ATP降解" class="headerlink" title="不依赖ATP降解"></a>不依赖ATP降解</h4><p>发生在<em>溶酶体</em></p>
+<h4 id="依赖ATP降解"><a href="#依赖ATP降解" class="headerlink" title="依赖ATP降解"></a>依赖ATP降解</h4><ol>
+<li>N-端规则：蛋白质半衰期与<em>N-端氨基酸</em>有关</li>
+<li>富含Pro (P), Glu (E), Ser (S)和Thr (T) 序列的蛋白质质被称为<em>PEST蛋白</em>， 它们比其他蛋白质更容易发生水解。</li>
+<li><strong>泛素-蛋白酶体降解途径</strong>：<ul>
+<li>泛素给蛋白打上标签</li>
+<li>降解由蛋白酶体执行<h4 id="氨基的去除"><a href="#氨基的去除" class="headerlink" title="氨基的去除"></a>氨基的去除</h4></li>
+</ul>
+</li>
+<li>氧化脱氨基：<ul>
+<li>直接脱去氨基，变为$NH_4^+$ </li>
+<li>氨基酸变为α-酮酸</li>
+<li>$FMNH_2$是电子受体，<em>不进入呼吸链</em>，进入过氧化物酶体</li>
+</ul>
+</li>
+<li>转氨基<ul>
+<li>指一种氨基酸的氨基被转移到一种α-酮 酸的酮基上形成一种新的氨基酸和一种新的α-酮酸的过程。催化此反应的酶被称为转氨酶。转氨反应是完全可逆的，因此它既参与氨基酸的降解，又参与氨基酸的合成。<h4 id="骨架的命运"><a href="#骨架的命运" class="headerlink" title="骨架的命运"></a>骨架的命运</h4></li>
+</ul>
+</li>
+<li><em>生酮氨基酸</em>: Leu &amp; Lys(这两个 不能作为糖异生的原料)，碳骨架被代谢为<strong>乙酰-CoA或乙酰乙酸</strong></li>
+<li><em>生糖氨基酸</em>:其他，碳骨架被代谢为<strong>葡萄糖</strong></li>
+<li><em>生酮兼生糖氨基酸</em>:Trp, Thr, Tyr, Ile, Phe (tttip)</li>
+<li>经TCA氧化成水和CO2</li>
+<li>重新合成氨基酸</li>
+</ol>
+<p><img src="https://s2.loli.net/2021/12/19/9S1Bs6cKfGXYuvQ.jpg" alt=""></p>
+<h4 id="N的命运"><a href="#N的命运" class="headerlink" title="N的命运"></a>N的命运</h4><ol>
+<li>氨离子命运<ul>
+<li>直接排出体外 </li>
+<li>植物将其转变成Asn(Asn合成酶)</li>
+<li>动物将其转变成Gln(Gln合成酶) </li>
+<li>尿素或尿酸</li>
+</ul>
+</li>
+<li>尿素循环<ul>
+<li>尿素循环也称鸟氨酸循环，是将含氮化合物分解产生的氨转变成尿素的过程，有解除氨毒害的作用;是排尿素动物在肝脏中合成尿素的一个循环机制。</li>
+<li>合成一分子尿素，消耗4分子ATP<script type="math/tex; mode=display">
+\begin{aligned}
+&NH_3\\ 
+\color{yellow}CPS-1,2ATP&\downarrow CO_2 \\
+\color{yellow}氨基&\color{yellow}甲酰磷酸 \\
+鸟氨酸&\downarrow\\
+瓜&氨酸\\
+&\downarrow鸟氨酸和瓜氨酸的反向转运\\
+瓜&氨酸 \\
+\color{yellow}2ATP,Asp&\downarrow \\
+精氨&琥珀酸\\ 
+裂解&\downarrow\\
+精&氨酸  \\ 
+&\downarrow\\
+鸟氨酸&+\color{lime}尿素
+\end{aligned}</script><h2 id="核苷酸代谢"><a href="#核苷酸代谢" class="headerlink" title="核苷酸代谢"></a><mark>核苷酸代谢</h2><blockquote>
+<p><strong>原料</strong></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>磷酸核糖(来自磷酸戊糖途径)</li>
+<li>嘌呤核苷酸：<ul>
+<li>天冬氨酸，谷氨酰胺，甘氨酸，一碳单位，$CO_2$</li>
+</ul>
+</li>
+<li>嘧啶核苷酸：<ul>
+<li>天冬氨酸，谷氨酰胺，$CO_2$<h3 id="嘌呤核苷酸的合成-A，G"><a href="#嘌呤核苷酸的合成-A，G" class="headerlink" title="嘌呤核苷酸的合成(A，G)"></a>嘌呤核苷酸的合成(A，G)</h3><blockquote>
+<p><strong>嘌呤核苷酸的元素来源</strong></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://s2.loli.net/2021/12/19/W59t2YqMm7DwGKp.jpg" alt=""></p>
+<blockquote>
+<p><strong>合成</strong></p>
+</blockquote>
+<p><img src="https://s2.loli.net/2021/12/19/8G6OLdESWXgV1Bj.jpg" alt=""></p>
+<h3 id="嘧啶核苷酸合成"><a href="#嘧啶核苷酸合成" class="headerlink" title="嘧啶核苷酸合成"></a>嘧啶核苷酸合成</h3><p><img src="https://s2.loli.net/2021/12/19/bTXokqzyIgKZx3e.jpg" alt=""></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%94%9F%E5%8C%96/" rel="tag"># 生化</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/02/17/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/02/17/%E8%8B%B1%E8%AF%AD%E4%BD%9C%E6%96%87%E7%A7%AF%E7%B4%AF/" rel="next" title="英语作文积累">
+      英语作文积累 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E7%94%9F%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">动态生化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E7%89%A9%E6%B0%A7%E5%8C%96"><span class="nav-number">1.1.</span> <span class="nav-text">生物氧化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%91%BC%E5%90%B8%E9%93%BE"><span class="nav-number">1.1.1.</span> <span class="nav-text">呼吸链</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#NADH%E5%91%BC%E5%90%B8%E9%93%BE"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">NADH呼吸链</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#FADH-2-%E5%91%BC%E5%90%B8%E9%93%BE"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">$FADH_2$呼吸链</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%96%E9%85%B5%E8%A7%A3"><span class="nav-number">1.2.</span> <span class="nav-text">糖酵解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%BA%94%E5%8E%86%E7%A8%8B"><span class="nav-number">1.2.1.</span> <span class="nav-text">反应历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%941-%E8%91%A1%E8%90%84%E7%B3%96%E7%A3%B7%E9%85%B8%E5%8C%96"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">反应1:葡萄糖磷酸化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%943-%E7%A3%B7%E9%85%B8%E6%9E%9C%E7%B3%96%E7%9A%84%E7%A3%B7%E9%85%B8%E5%8C%96"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">反应3:磷酸果糖的磷酸化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%946-3-%E7%A3%B7%E9%85%B8%E7%94%98%E6%B2%B9%E9%86%9B%E8%84%B1%E6%B0%A2"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">反应6:3-磷酸甘油醛脱氢</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%947-%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%BA%95%E7%89%A9%E6%B0%B4%E5%B9%B3%E7%A3%B7%E9%85%B8%E5%8C%96"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">反应7:第一步底物水平磷酸化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%9410-%E7%AC%AC%E4%BA%8C%E6%AD%A5%E5%BA%95%E7%89%A9%E6%B0%B4%E5%B9%B3%E7%A3%B7%E9%85%B8%E5%8C%96"><span class="nav-number">1.2.1.5.</span> <span class="nav-text">反应10:第二步底物水平磷酸化</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%96%E9%85%B5%E8%A7%A3%E7%9A%84%E8%B0%83%E6%8E%A7"><span class="nav-number">1.2.2.</span> <span class="nav-text">糖酵解的调控</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E7%BE%A7%E9%85%B8%E5%BE%AA%E7%8E%AF-TCA"><span class="nav-number">1.3.</span> <span class="nav-text">三羧酸循环(TCA)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%99%E9%85%B0CoA%E7%9A%84%E7%94%9F%E6%88%90"><span class="nav-number">1.3.1.</span> <span class="nav-text">乙酰CoA的生成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%BA%94%E5%8E%86%E7%A8%8B-1"><span class="nav-number">1.3.2.</span> <span class="nav-text">反应历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%941-%E6%9F%A0%E6%AA%AC%E9%85%B8%E7%9A%84%E5%90%88%E6%88%90"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">反应1:柠檬酸的合成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%942-%E6%9F%A0%E6%AA%AC%E9%85%B8%E7%9A%84%E5%BC%82%E6%9E%84%E5%8C%96"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">反应2:柠檬酸的异构化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%943-%E5%BC%82%E6%9F%A0%E6%AA%AC%E9%85%B8%E7%9A%84%E8%84%B1%E6%B0%A2"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">反应3:异柠檬酸的脱氢</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%944-alpha-%E9%85%AE%E6%88%8A%E4%BA%8C%E9%85%B8-%E7%9A%84%E6%B0%A7%E5%8C%96%E8%84%B1%E7%BE%A7"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">反应4:$\alpha-酮戊二酸$的氧化脱羧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%945-%E5%BA%95%E7%89%A9%E6%B0%B4%E5%B9%B3%E7%9A%84%E7%A3%B7%E9%85%B8%E5%8C%96"><span class="nav-number">1.3.2.5.</span> <span class="nav-text">反应5:底物水平的磷酸化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%946-%E7%90%A5%E7%8F%80%E9%85%B8%E7%9A%84%E8%84%B1%E6%B0%A2"><span class="nav-number">1.3.2.6.</span> <span class="nav-text">反应6:琥珀酸的脱氢</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%947-%E8%8B%B9%E6%9E%9C%E9%85%B8%E7%9A%84%E5%BD%A2%E6%88%90"><span class="nav-number">1.3.2.7.</span> <span class="nav-text">反应7:苹果酸的形成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%948-%E8%8D%89%E9%85%B0%E4%B9%99%E9%85%B8%E7%9A%84%E5%86%8D%E7%94%9F"><span class="nav-number">1.3.2.8.</span> <span class="nav-text">反应8:草酰乙酸的再生</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCA%E7%9A%84%E8%B0%83%E6%8E%A7"><span class="nav-number">1.3.3.</span> <span class="nav-text">TCA的调控</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCA%E5%BE%AA%E7%8E%AF%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.4.</span> <span class="nav-text">TCA循环总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A3%B7%E9%85%B8%E6%88%8A%E7%B3%96%E9%80%94%E5%BE%84"><span class="nav-number">1.4.</span> <span class="nav-text">磷酸戊糖途径</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%BA%94%E5%8E%86%E7%A8%8B-2"><span class="nav-number">1.4.1.</span> <span class="nav-text">反应历程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%96%E5%BC%82%E7%94%9F"><span class="nav-number">1.5.</span> <span class="nav-text">糖异生</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E5%BA%94%E5%8E%86%E7%A8%8B-3"><span class="nav-number">1.5.1.</span> <span class="nav-text">反应历程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%941-%E4%B8%99%E9%85%AE%E9%85%B8%E7%9A%84%E7%BE%A7%E5%8C%96"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">反应1:丙酮酸的羧化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%942-PEP%E7%9A%84%E5%BD%A2%E6%88%90"><span class="nav-number">1.5.1.2.</span> <span class="nav-text">反应2:PEP的形成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%943-1-6-%E4%BA%8C%E7%A3%B7%E9%85%B8%E6%9E%9C%E7%B3%96%E7%9A%84%E6%B0%B4%E8%A7%A3"><span class="nav-number">1.5.1.3.</span> <span class="nav-text">反应3:1,6-二磷酸果糖的水解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%944-6-%E7%A3%B7%E9%85%B8%E8%91%A1%E7%B3%96%E7%9A%84%E6%B0%B4%E8%A7%A3"><span class="nav-number">1.5.1.4.</span> <span class="nav-text">反应4:6-磷酸葡糖的水解</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E7%89%A9%E8%B4%A8%E8%BF%9B%E5%85%A5%E7%B3%96%E5%BC%82%E7%94%9F%E9%80%94%E5%BE%84"><span class="nav-number">1.5.2.</span> <span class="nav-text">其他物质进入糖异生途径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cori%E5%BE%AA%E7%8E%AF%E5%92%8CAla%E5%BE%AA%E7%8E%AF"><span class="nav-number">1.5.3.</span> <span class="nav-text">Cori循环和Ala循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%96%E5%BC%82%E7%94%9F%E7%9A%84%E7%94%9F%E7%90%86%E5%8A%9F%E8%83%BD"><span class="nav-number">1.5.4.</span> <span class="nav-text">糖异生的生理功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%96%E5%BC%82%E7%94%9F%E8%B0%83%E8%8A%82"><span class="nav-number">1.5.5.</span> <span class="nav-text">糖异生调节</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%96%E5%8E%9F%E4%BB%A3%E8%B0%A2"><span class="nav-number">1.6.</span> <span class="nav-text">糖原代谢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%96%E5%8E%9F%E5%90%88%E6%88%90"><span class="nav-number">1.6.1.</span> <span class="nav-text">糖原合成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%96%E5%8E%9F%E5%88%86%E8%A7%A3"><span class="nav-number">1.6.2.</span> <span class="nav-text">糖原分解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%96%E4%BB%A3%E8%B0%A2"><span class="nav-number">1.7.</span> <span class="nav-text">糖代谢</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%84%82%E8%82%AA%E9%85%B8%E4%BB%A3%E8%B0%A2"><span class="nav-number">1.8.</span> <span class="nav-text">脂肪酸代谢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%CE%B2-%E6%B0%A7%E5%8C%96"><span class="nav-number">1.8.1.</span> <span class="nav-text">β-氧化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E5%BA%94%E5%8E%86%E7%A8%8B-4"><span class="nav-number">1.8.1.1.</span> <span class="nav-text">反应历程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%CE%B2-%E6%B0%A7%E5%8C%96%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="nav-number">1.8.1.2.</span> <span class="nav-text">β-氧化的功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%CE%B2-%E6%B0%A7%E5%8C%96%E7%9A%84%E6%8C%91%E6%88%98"><span class="nav-number">1.8.1.3.</span> <span class="nav-text">β-氧化的挑战</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%CE%B1-%E6%B0%A7%E5%8C%96"><span class="nav-number">1.8.2.</span> <span class="nav-text">α-氧化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%CF%89-%E6%B0%A7%E5%8C%96"><span class="nav-number">1.8.3.</span> <span class="nav-text">ω-氧化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%84%82%E8%82%AA%E9%85%B8%E7%9A%84%E5%90%88%E6%88%90"><span class="nav-number">1.8.4.</span> <span class="nav-text">脂肪酸的合成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B0%A8%E5%9F%BA%E9%85%B8%E4%BB%A3%E8%B0%A2"><span class="nav-number">1.9.</span> <span class="nav-text">氨基酸代谢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%9B%8B%E7%99%BD%E8%B4%A8%E9%85%B6%E4%BF%83%E9%99%8D%E8%A7%A3"><span class="nav-number">1.9.1.</span> <span class="nav-text">蛋白质酶促降解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8D%E4%BE%9D%E8%B5%96ATP%E9%99%8D%E8%A7%A3"><span class="nav-number">1.9.1.1.</span> <span class="nav-text">不依赖ATP降解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BE%9D%E8%B5%96ATP%E9%99%8D%E8%A7%A3"><span class="nav-number">1.9.1.2.</span> <span class="nav-text">依赖ATP降解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B0%A8%E5%9F%BA%E7%9A%84%E5%8E%BB%E9%99%A4"><span class="nav-number">1.9.1.3.</span> <span class="nav-text">氨基的去除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%AA%A8%E6%9E%B6%E7%9A%84%E5%91%BD%E8%BF%90"><span class="nav-number">1.9.1.4.</span> <span class="nav-text">骨架的命运</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#N%E7%9A%84%E5%91%BD%E8%BF%90"><span class="nav-number">1.9.1.5.</span> <span class="nav-text">N的命运</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B8%E8%8B%B7%E9%85%B8%E4%BB%A3%E8%B0%A2"><span class="nav-number">1.10.</span> <span class="nav-text">核苷酸代谢</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%98%8C%E5%91%A4%E6%A0%B8%E8%8B%B7%E9%85%B8%E7%9A%84%E5%90%88%E6%88%90-A%EF%BC%8CG"><span class="nav-number">1.10.1.</span> <span class="nav-text">嘌呤核苷酸的合成(A，G)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%98%A7%E5%95%B6%E6%A0%B8%E8%8B%B7%E9%85%B8%E5%90%88%E6%88%90"><span class="nav-number">1.10.2.</span> <span class="nav-text">嘧啶核苷酸合成</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jonathan Yang"
+      src="https:s2.loli.net/2022/02/17/rUcFo19TmOpu3MA.jpg">
+  <p class="site-author-name" itemprop="name">Jonathan Yang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jonathan Yang</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
