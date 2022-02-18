@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="流程图（FlowChart）关键字定义图表类型1graph\flowchart TB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mermaid画图">
+<meta property="og:url" content="http://example.com/2022/02/18/mermaid%E7%94%BB%E5%9B%BE/index.html">
+<meta property="og:site_name" content="MyBlog">
+<meta property="og:description" content="流程图（FlowChart）关键字定义图表类型1graph\flowchart TB">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-02-18T01:28:10.000Z">
+<meta property="article:modified_time" content="2022-02-18T03:20:31.611Z">
+<meta property="article:author" content="Jonathan Yang">
+<meta property="article:tag" content="代码">
+<meta property="article:tag" content="画图">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2022/02/18/mermaid%E7%94%BB%E5%9B%BE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>mermaid画图 | MyBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">MyBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/18/mermaid%E7%94%BB%E5%9B%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/%E5%A4%B4%E5%83%8F.PNG">
+      <meta itemprop="name" content="Jonathan Yang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MyBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          mermaid画图
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-02-18 09:28:10 / 修改时间：11:20:31" itemprop="dateCreated datePublished" datetime="2022-02-18T09:28:10+08:00">2022-02-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/markdown%E6%8A%80%E5%B7%A7-mermaid%E7%94%BB%E5%9B%BE/" itemprop="url" rel="index"><span itemprop="name">markdown技巧 - mermaid画图</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="流程图（FlowChart）"><a href="#流程图（FlowChart）" class="headerlink" title="流程图（FlowChart）"></a>流程图（FlowChart）</h1><h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><h3 id="定义图表类型"><a href="#定义图表类型" class="headerlink" title="定义图表类型"></a>定义图表类型</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">graph\flowchart TB</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="流程图走向"><a href="#流程图走向" class="headerlink" title="流程图走向"></a>流程图走向</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">TB - top to bottom </span><br><span class="line">TD - top-down/ same as top to bottom</span><br><span class="line">BT - bottom to top</span><br><span class="line">RL - right to left</span><br><span class="line">LR - left to right</span><br></pre></td></tr></table></figure>
+<h3 id="缩进后开始排布图形："><a href="#缩进后开始排布图形：" class="headerlink" title="缩进后开始排布图形："></a>缩进后开始排布图形：</h3><ol>
+<li>任意符号定义一个id，不加修饰的话，默认矩形框加符号名<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">	id1---&gt;id2</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">	id1--&gt;id</span><br></pre></td></tr></table></figure>
+<ol>
+<li>符号名+框类型+文本，符号名和框符不用空格隔开</li>
+</ol>
+<h2 id=""><a href="#" class="headerlink" title=""></a><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">	id1(微圆角矩形框)===&gt; id2([极值圆角矩形框]) ===&gt;id3&#123;&#123;尖角矩形框&#125;&#125;</span><br><span class="line">	id5&#123;菱形框&#125;===&gt; id6&gt;旗帜框]</span><br><span class="line">	id7[/平行四边形框/] ===&gt; id8[\反平行四边形框\]</span><br><span class="line">	id9[/梯形框\] ===&gt; id10[\反梯形框/]</span><br><span class="line">	id11[[子程序框]]===&gt;id12[(数据库框)]</span><br></pre></td></tr></table></figure></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">	id1(微圆角矩形框) ===&gt; id2([极值圆角矩形框]) ===&gt;id3&#123;&#123;尖角矩形框&#125;&#125;</span><br><span class="line">	id5&#123;菱形框&#125;===&gt; id6&gt;旗帜框]</span><br><span class="line">	id7[/平行四边形框/] ===&gt; id8[\反平行四边形框\]</span><br><span class="line">	id9[/梯形框\] ===&gt; id10[\反梯形框/]</span><br><span class="line">	id11[[子程序框]]===&gt;id12[(数据库框)]</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+<h2 id="逻辑关系"><a href="#逻辑关系" class="headerlink" title="逻辑关系"></a>逻辑关系</h2><h3 id="连接符"><a href="#连接符" class="headerlink" title="连接符"></a>连接符</h3><ol>
+<li>无箭头连接符： <code>---</code>、<code>===</code></li>
+<li>带箭头连接符： <code>---&gt;</code>、<code>===&gt;</code></li>
+<li>虚线连接符： <code>-.-&gt;</code>、<code>-.-</code></li>
+<li>带文本连接符：符号要求至少前2后3<ol>
+<li><code>--text---</code>或<code>A---|text|B</code></li>
+<li><code>--text--&gt;</code></li>
+<li>虚线：<code>A-。text.-&gt;B</code></li>
+<li><code>&quot;text&quot;</code> 防止歧义</li>
+</ol>
+</li>
+<li>箭头连接符的长度等级由<code>-</code>或<code>=</code>个数决定（至少2个），带文本时由文本右边的<code>-</code>或<code>=</code>个数决定，特别注意，虚线长度等级由<code>.</code>个数决定</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">	A --- B -.-&gt; C -- text --&gt; D</span><br></pre></td></tr></table></figure>
+<h2 id="子图"><a href="#子图" class="headerlink" title="子图"></a>子图</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">subgraph title</span><br><span class="line">	(graph definition)</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph</span><br><span class="line">subgraph title</span><br><span class="line">	A ---&gt; B</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<h1 id="甘特图（gantt）"><a href="#甘特图（gantt）" class="headerlink" title="甘特图（gantt）"></a>甘特图（gantt）</h1><h2 id="句法"><a href="#句法" class="headerlink" title="句法"></a>句法</h2><p>banana :active, crit, b,2017-07-23, 1d</p>
+<p>任务名 :crti（关键）,active/done ,任务带好,开始日期,持续时间（d,w,y） </p>
+<p>dataFormat 输入日期格式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Input       Example             Description:</span><br><span class="line">YYYY        2014                4 digit year</span><br><span class="line">YY          14                  2 digit year</span><br><span class="line">Q           1..4                Quarter of year. Sets month to first month in quarter.</span><br><span class="line">M MM        1..12               Month number</span><br><span class="line">MMM MMMM    January..Dec        Month name in locale set by moment.locale()</span><br><span class="line">D DD        1..31               Day of month</span><br><span class="line">Do          1st..31st           Day of month with ordinal</span><br><span class="line">DDD DDDD    1..365              Day of year</span><br><span class="line">X           1410715640.579      Unix timestamp</span><br><span class="line">x           1410715640579       Unix ms timestamp</span><br><span class="line">H HH        0..23               24 hour time</span><br><span class="line">h hh        1..12               12 hour time used with a A.</span><br><span class="line">a A         am pm               Post or ante meridiem</span><br><span class="line">m mm        0..59               Minutes</span><br><span class="line">s ss        0..59               Seconds</span><br><span class="line">S           0..9                Tenths of a second</span><br><span class="line">SS          0..99               Hundreds of a second</span><br><span class="line">SSS         0..999              Thousandths of a second</span><br><span class="line">Z ZZ        +12:00              Offset from UTC as +-HH:mm, +-HHmm, or Z</span><br></pre></td></tr></table></figure>
+<p>axisFormat 输出日期格式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">%a - abbreviated weekday name.</span><br><span class="line">%A - full weekday name.</span><br><span class="line">%b - abbreviated month name.</span><br><span class="line">%B - full month name.</span><br><span class="line">%c - date and time, as &quot;%a %b %e %H:%M:%S %Y&quot;.</span><br><span class="line">%d - zero-padded day of the month as a decimal number [01,31].</span><br><span class="line">%e - space-padded day of the month as a decimal number [ 1,31]; equivalent to %_d.</span><br><span class="line">%H - hour (24-hour clock) as a decimal number [00,23].</span><br><span class="line">%I - hour (12-hour clock) as a decimal number [01,12].</span><br><span class="line">%j - day of the year as a decimal number [001,366].</span><br><span class="line">%m - month as a decimal number [01,12].</span><br><span class="line">%M - minute as a decimal number [00,59].</span><br><span class="line">%L - milliseconds as a decimal number [000, 999].</span><br><span class="line">%p - either AM or PM.</span><br><span class="line">%S - second as a decimal number [00,61].</span><br><span class="line">%U - week number of the year (Sunday as the first day of the week) as a decimal number [00,53].</span><br><span class="line">%w - weekday as a decimal number [0(Sunday),6].</span><br><span class="line">%W - week number of the year (Monday as the first day of the week) as a decimal number [00,53].</span><br><span class="line">%x - date, as &quot;%m/%d/%Y&quot;.</span><br><span class="line">%X - time, as &quot;%H:%M:%S&quot;.</span><br><span class="line">%y - year without century as a decimal number [00,99].</span><br><span class="line">%Y - year with century as a decimal number.</span><br><span class="line">%Z - time zone offset, such as &quot;-0700&quot;.</span><br><span class="line">%% - a literal &quot;%&quot; character.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">	title Example</span><br><span class="line">	apple :a, 2017-07-20, 1w</span><br><span class="line">	banana :active, crit, b,2017-07-23, 1d</span><br><span class="line">	cherry :active, c, after b a, 1d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">	apple :a, 2017-07-20, 1w</span><br><span class="line">	banana :active, crit, b,2017-07-23, 1d</span><br><span class="line">	cherry :active, c, after b a, 1d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">	title 甘特图</span><br><span class="line">	todayMarker stroke-width:2px,stroke:#0f0,opacity:0.5</span><br><span class="line">	%% 今日标记</span><br><span class="line">	dateFormat  MM-DD</span><br><span class="line">	axisFormat %m-%d</span><br><span class="line">    section 计划A</span><br><span class="line">    A task           :a1, 02-20, 5d</span><br><span class="line">    Another task     :after a1  , 3d</span><br><span class="line">    section 计划B</span><br><span class="line">    Task in sec      :02-15  , 3d</span><br><span class="line">    another task      : 5d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">	title 甘特图</span><br><span class="line">	todayMarker stroke-width:2px,stroke:#0f0,opacity:0.5</span><br><span class="line">	%% 今日标记</span><br><span class="line">	dateFormat  MM-DD</span><br><span class="line">	axisFormat %m-%d</span><br><span class="line">    section 计划A</span><br><span class="line">    A task           :a1, 02-20, 5d</span><br><span class="line">    Another task     :after a1  , 3d</span><br><span class="line">    section 计划B</span><br><span class="line">    Task in sec      :02-15  , 3d</span><br><span class="line">    another task      : 5d</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%BB%A3%E7%A0%81/" rel="tag"># 代码</a>
+              <a href="/tags/%E7%94%BB%E5%9B%BE/" rel="tag"># 画图</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/02/17/latex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" rel="prev" title="LaTeX数学公式">
+      <i class="fa fa-chevron-left"></i> LaTeX数学公式
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B%E5%9B%BE%EF%BC%88FlowChart%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">流程图（FlowChart）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-number">1.1.</span> <span class="nav-text">关键字</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E5%9B%BE%E8%A1%A8%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">定义图表类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B%E5%9B%BE%E8%B5%B0%E5%90%91"><span class="nav-number">1.1.2.</span> <span class="nav-text">流程图走向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%A9%E8%BF%9B%E5%90%8E%E5%BC%80%E5%A7%8B%E6%8E%92%E5%B8%83%E5%9B%BE%E5%BD%A2%EF%BC%9A"><span class="nav-number">1.1.3.</span> <span class="nav-text">缩进后开始排布图形：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.2.</span> <span class="nav-text">1
+2
+3
+4
+5
+6
+graph LR
+	id1(微圆角矩形框)&#x3D;&#x3D;&#x3D;&gt; id2([极值圆角矩形框]) &#x3D;&#x3D;&#x3D;&gt;id3{{尖角矩形框}}
+	id5{菱形框}&#x3D;&#x3D;&#x3D;&gt; id6&gt;旗帜框]
+	id7[&#x2F;平行四边形框&#x2F;] &#x3D;&#x3D;&#x3D;&gt; id8[\反平行四边形框\]
+	id9[&#x2F;梯形框\] &#x3D;&#x3D;&#x3D;&gt; id10[\反梯形框&#x2F;]
+	id11[[子程序框]]&#x3D;&#x3D;&#x3D;&gt;id12[(数据库框)]
+</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E5%85%B3%E7%B3%BB"><span class="nav-number">1.3.</span> <span class="nav-text">逻辑关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5%E7%AC%A6"><span class="nav-number">1.3.1.</span> <span class="nav-text">连接符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%90%E5%9B%BE"><span class="nav-number">1.4.</span> <span class="nav-text">子图</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%98%E7%89%B9%E5%9B%BE%EF%BC%88gantt%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">甘特图（gantt）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%A5%E6%B3%95"><span class="nav-number">2.1.</span> <span class="nav-text">句法</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jonathan Yang"
+      src="/images/%E5%A4%B4%E5%83%8F.PNG">
+  <p class="site-author-name" itemprop="name">Jonathan Yang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jonathan Yang</span>
+</div>
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
